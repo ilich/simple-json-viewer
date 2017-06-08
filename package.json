@@ -1,0 +1,27 @@
+{
+  "name": "simple-json-viewer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "./node_modules/.bin/electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilich/simple-json-viewer.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Ilya Verbitskiy",
+    "email": "ilya@verbitskiy.co"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ilich/simple-json-viewer/issues"
+  },
+  "homepage": "https://github.com/ilich/simple-json-viewer#readme",
+  "private": true,
+  "devDependencies": {
+    "electron": "^1.6.10"
+  }
+}
