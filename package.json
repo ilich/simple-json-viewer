@@ -4,7 +4,8 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "./node_modules/.bin/electron ."
+    "start": "./node_modules/.bin/electron .",
+    "build": "./node_modules/.bin/electron-packager . simple-json-viewer --platform=win32 --arch=x64"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
   "homepage": "https://github.com/ilich/simple-json-viewer#readme",
   "private": true,
   "devDependencies": {
-    "electron": "^1.6.10"
+    "electron": "^1.6.10",
+    "electron-packager": "^8.7.1"
   }
 }
