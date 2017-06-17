@@ -1,13 +1,44 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Simple JSON Viewer</title>
-    </head>
-    <body>
-        <h1>Hello World!</h1>
-        We are using node <script>document.write(process.versions.node)</script>,
-        Chrome <script>document.write(process.versions.chrome)</script>,
-        and Electron <script>document.write(process.versions.electron)</script>.
-    </body>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Simple JSON Viewer</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/jstree/themes/default/style.min.css" />
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+	<body>
+		<div>
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs" role="tablist">
+				<li role="presentation" class="active"><a href="#text" aria-controls="text" role="tab" data-toggle="tab">Text</a></li>
+				<li role="presentation"><a href="#viewer" aria-controls="viewer" role="tab" data-toggle="tab">Viewer</a></li>
+			</ul>
+
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<div role="tabpanel" class="tab-pane active" id="text">
+					<div class="container-fluid">
+						<div class="row pnl-toolbar">
+							<button class="btn btn-default" id="json-format">Format</button>
+							<button class="btn btn-default" id="json-minify">Remove white space</button>
+						</div>
+						<div class="row">
+							<textarea class="form-control" id="json-text"></textarea>
+						</div>
+					</div>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="viewer">
+					<div id="json-tree"></div>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jstree.min.js"></script>
+		<script src="js/index.js"></script>
+	</body>	
 </html>

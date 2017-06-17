@@ -1,0 +1,12 @@
+body {
+    padding: 5px;
+}
+
+div[role="tabpanel"] {
+    padding: 10px 5px;
+}
+
+
+.pnl-toolbar {
+    margin-bottom: 10px;
+}

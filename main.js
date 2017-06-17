@@ -6,7 +6,10 @@ let win;
 
 function createWindow () {
     win = new BrowserWindow({
-        show: false
+        show: false,
+        webPreferences: {
+            nodeIntegration: false   
+        } 
     });
 
     Menu.setApplicationMenu(null);
@@ -16,6 +19,8 @@ function createWindow () {
         protocol: 'file:',
         slashes: true
     }));
+
+    // win.openDevTools();
 
     win.once('ready-to-show', () => {
         win.show();
